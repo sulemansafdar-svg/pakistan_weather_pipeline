@@ -1,8 +1,0 @@
-__pycache__/
-*.pyc
-data/raw/
-data/clean/
-data/warnings/
-database/
-.env
-.vscode/
