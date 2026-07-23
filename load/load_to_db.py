@@ -47,14 +47,23 @@ bronze_current_weather = Table(
 bronze_hourly_weather = Table(
     'hourly_weather',
     meta,
+<<<<<<< HEAD
     Column('forcast_time',      String(100)),    
     Column('temperature',        String(100)),    
+=======
+    Column('forcast_time',      String(100)),   
+    Column('temperature',        String(100)),   
+>>>>>>> ddacdce3e0fdbf1e20dd1be1137ee3970cb6f1a8
     Column('precipitation',      String(100)),
     Column('windspeed',          String(100)),
     Column('weathercode',        String(100)),
     Column('city',               String(100)),
     Column('load_timestamp',     String(100)),
+<<<<<<< HEAD
     Column('weather_discription', String(100)), 
+=======
+    Column('weather_discription', String(100)),  
+>>>>>>> ddacdce3e0fdbf1e20dd1be1137ee3970cb6f1a8
     schema='bronze'
 )
 
