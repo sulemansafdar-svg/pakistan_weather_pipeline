@@ -40,21 +40,21 @@ bronze_current_weather = Table(
     Column('city',                String(50)),
     Column('latitude',            String(100)),
     Column('load_timestamp',      String(100)),
-    Column('weather_discription', String(100)),   
+    Column('weather_description', String(150)),   
     schema='bronze'
 )
 
 bronze_hourly_weather = Table(
     'hourly_weather',
     meta,
-    Column('forcast_time',      String(100)),    # fixed typo
-    Column('temperature',        String(100)),    # was missing!
+    Column('forcast_time',      String(100)),    
+    Column('temperature',        String(100)),    
     Column('precipitation',      String(100)),
     Column('windspeed',          String(100)),
     Column('weathercode',        String(100)),
     Column('city',               String(100)),
     Column('load_timestamp',     String(100)),
-    Column('weather_discription', String(100)),  # fixed typo
+    Column('weather_discription', String(100)), 
     schema='bronze'
 )
 
